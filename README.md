@@ -1,14 +1,15 @@
 # Grafana Dashboard
 
-This module is responsible for assembling various Grafana dashboards based on panel inputs
+This module is responsible for assembling various Grafana dashboards based on panel inputs of templates such as [synapsestudios/terraform-grafana-panel-graph](https://github.com/synapsestudios/terraform-grafana-panel-graph), and [synapsestudios/terraform-grafana-panel-bar-gauge](https://github.com/synapsestudios/terraform-grafana-panel-bar-gauge).
 
+This module will output JSON which can be used to populate / deploy a Grafana dashboard using the [Grafana Provider](https://www.terraform.io/docs/providers/grafana/index.html)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 0.12.6 |
+| terraform | ~> 0.12.29 |
 | template | ~> 2.1 |
 
 ## Providers
