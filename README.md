@@ -10,7 +10,6 @@ This module will output JSON which can be used to populate / deploy a Grafana da
 | Name | Version |
 |------|---------|
 | terraform | ~> 0.12.29 |
-| template | ~> 2.1 |
 
 ## Providers
 
