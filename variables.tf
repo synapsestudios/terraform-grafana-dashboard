@@ -35,33 +35,34 @@ variable "panel_width" {
   default     = 5
 }
 
-# TODO fix the types for the following variables.
+# The panel lists mix panel objects of different shapes (graph and bar
+# gauge), so they stay `any`. A list type would force one shared shape.
 variable "load_balancer_panels" {
-  # type        = unknown?
+  type        = any
   description = "List of load balancer panels in template form."
   default     = []
 }
 
 variable "rds_panels" {
-  # type        = unknown?
+  type        = any
   description = "List of RDS panels in template form."
   default     = []
 }
 
 variable "redis_panels" {
-  # type        = unknown?
+  type        = any
   description = "List of Redis panels in template form."
   default     = []
 }
 
 variable "es_panels" {
-  # type        = unknown?
+  type        = any
   description = "List of ElasticSearch panels in template form."
   default     = []
 }
 
 variable "ecs_panels" {
-  # type        = list(any)
+  type        = any
   description = "List of ECS panels in template form.."
   default     = []
 }
